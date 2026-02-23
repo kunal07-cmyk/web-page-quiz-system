@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h2>Online Quiz System</h2>
+        <input type="text" id="username" placeholder="Enter Your Name">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" style="display:none;">
+        <div class="header">
+            <span id="question-number"></span>
+            <span id="progress"></span>
+        </div>
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <p id="message"></p>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" style="display:none;">
+        <h2 id="final-message"></h2>
+        <button onclick="location.reload()">Restart Quiz</button>
+    </div>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
